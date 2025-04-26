@@ -18,6 +18,7 @@ async function SelectCountry({ defaultCountry, name, id, className }) {
       // Here we use a trick to encode BOTH the country name and the flag into the value. Then we split them up again later in the server action
       defaultValue={`${defaultCountry}%${flag}`}
       className={className}
+      key={defaultCountry}
     >
       <option value=''>Select country...</option>
       {countries.map((c) => (
@@ -29,4 +30,6 @@ async function SelectCountry({ defaultCountry, name, id, className }) {
   );
 }
 
-export default SelectCountry;
+export default SelectCountry; 
+
+// name=\"1_nationality\"\r\n\r\nBelgium%https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg\r\n------WebKitFormBoundarylw1nU9zZkA4aD4XL\r\nContent-Disposition: form-data; 

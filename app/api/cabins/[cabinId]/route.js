@@ -11,5 +11,5 @@ export async function GET(request, {params}) {
 
     } catch { 
         return Response.json({message: "Cabin not found"});
-}
+    }
 }
