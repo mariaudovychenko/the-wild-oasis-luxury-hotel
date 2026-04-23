@@ -14,6 +14,7 @@ function CabinCard({ cabin }) {
         src={image}
         fill
         alt={`Cabin ${name}`}
+        
         />
       </div>
 
